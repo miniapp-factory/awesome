@@ -1,4 +1,5 @@
 import { description, title } from "@/lib/metadata";
+import UnicornBackground from "@/components/unicorn-background";
 import { generateMetadata } from "@/lib/farcaster-embed";
 
 export { generateMetadata };
@@ -6,7 +7,8 @@ export { generateMetadata };
 export default function Home() {
   // NEVER write anything here, only use this page to import components
   return (
-    <main className="flex flex-col gap-3 place-items-center place-content-center px-4 grow">
+    <main className="relative flex flex-col gap-3 place-items-center place-content-center px-4 grow">
+      <UnicornBackground />
       <span className="text-2xl">{title}</span>
       <span className="text-muted-foreground">{description}</span>
     </main>
